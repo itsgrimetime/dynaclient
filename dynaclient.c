@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
     eventStatus = 1;
 
     while (1) {
-	eventStatus = enet_host_service(client, &event, 50000);
+	eventStatus = enet_host_service(client, &event, 30000);
 
 	// If we had some event that interested us
 	if (eventStatus > 0) {
